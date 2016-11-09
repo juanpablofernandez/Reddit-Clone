@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @subreddit.title %>
+</p>
+
+<%= link_to 'Edit', edit_subreddit_path(@subreddit) %> |
+<%= link_to 'Back', subreddits_path %>
