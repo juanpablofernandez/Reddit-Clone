@@ -1,2 +1,0 @@
-class Subreddit < ApplicationRecord
-end
