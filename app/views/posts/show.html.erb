@@ -1,0 +1,8 @@
+<h1><%= @post.title %></h1>
+
+<p><%= @post.body %></p>
+<%= form_for @post do |f| %>
+    <%= f.text_area :body %>
+    <%= f.submit"Comment" %>
+<% end %>
+<%= link_to 'Edit Post', edit_path%>

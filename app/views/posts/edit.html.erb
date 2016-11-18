@@ -1,0 +1,18 @@
+<h1> Edit Post</h1>
+
+<%= form_for @post, method: "put" do |f| %>
+    <%= f.text_field :title %>
+    <%= f.text_area :body %>
+    <%= f.submit "Update"%>
+<% end %>
+
+
+<% form_tag @post, method: "put" do %>
+<label> Post title:</label><br>
+<% text_field_tag :title %><br>
+<label> Post Description</label><br>
+<% text_area_tag :body %><br>
+
+
+<% end %>
+<%= submit_tag "Cancel"%>
