@@ -5,4 +5,5 @@
     <%= f.text_area :body %>
     <%= f.submit"Comment" %>
 <% end %>
-<%= link_to 'Edit Post', edit_path%>
+
+<%= link_to 'Edit Post', edit_post_path(@post) %>
