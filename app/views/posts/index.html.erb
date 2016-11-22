@@ -4,5 +4,13 @@
 
 
 <% @posts.each do |post| %>
-    <p><%= link_to post.title, post %></p>
+
+    <!-- <p><%= link_to post.title, post %></p> -->
+    <div class="list-group">
+        <%link_to "show post", post_path(post) %>
+      <a href="<%post%>" class="list-group-item list-group-item-action active">
+        <h5 class="list-group-item-heading"><%=post.title%></h5>
+        <p class="list-group-item-text"><%=post.body%></p>
+      </a>
+    </div>
 <% end%>
